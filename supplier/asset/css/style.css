@@ -1,0 +1,65 @@
+        #links:hover{
+            background-color: whitesmoke;
+            border-radius: 5px;
+        }
+
+            .outline {
+    color: white; /* Unfortunately you can't use transparent here … */
+    text-shadow:
+     -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000
+}
+
+/* Real outline for modern browsers */
+@supports((text-stroke: 3px black) or (-webkit-text-stroke: 3px black)) {
+    .outline {
+        color: transparent;
+        -webkit-text-stroke: 3px black;
+    text-stroke: 3px black;
+        text-shadow: none;
+    }
+
+        }
+        #links:hover{
+            background-color: whitesmoke;
+            border-radius: 5px;
+        }
+.profile_image
+{
+  width: 200px;
+  position: relative;
+  margin: auto;
+}
+.profile_image img{
+  border-radius: 50%;
+  border: #eaeaea;
+}
+.profile_image .image
+{
+  position: absolute;
+  bottom: 0;
+  right: 45px;
+  width: 32px;
+  height: 32px;
+  line-height: 33px;
+  overflow: hidden;
+  background-color: lightblue;
+  text-align: center;
+  border-radius: 50%;
+
+
+}
+/*.upload .round input[type='file']{
+    position: absolute;
+    transform: scale(2);
+
+}*/
+input[type='file']::-webkit-file-upload-button{
+    cursor: pointer;
+}
+#content
+{
+    border-radius: 10%;
+}
